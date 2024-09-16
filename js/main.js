@@ -83,6 +83,49 @@ function handleDisplayMenuItems(menuItems, menuId) {
       
       return Txt; // Geri döndür
 }
+function countDown(){
+    const targetDate = new Date('2024-09-30T23:59:59').getTime();
+    const now = new Date().getTime();
+    const timeDifference = targetDate - now;
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    const countDownSec = document.querySelector('#countDownSec');
+    let countTxt = '';
+
+    countTxt = `
+        <div class="flex items-center gap-x-1 ">
+            <div class="flex flex-col items-center gap-y-1">
+                <div class="text-2xl font-semibold bg-card-border rounded-md w-[50px] h-[50px] flex justify-center items-center text-white">${days}</div>
+                <div class="text-xs">Days</div>
+            </div>
+            <span class="inline-block -mt-5">:</span>
+            <div class="flex flex-col items-center gap-y-1">
+                <div class="text-2xl font-semibold bg-card-border rounded-md w-[50px] h-[50px] flex justify-center items-center text-white">${hours}</div>
+                <div class="text-xs">Hours</div>
+            </div>
+            <span class="inline-block -mt-5">:</span>
+            <div class="flex flex-col items-center gap-y-1">
+                <div class="text-2xl font-semibold bg-card-border rounded-md w-[50px] h-[50px] flex justify-center items-center text-white">${minutes}</div>
+                <div class="text-xs">Minutes</div>
+            </div>
+            <span class="inline-block -mt-5">:</span>
+            <div class="flex flex-col items-center gap-y-1">
+                <div class="text-2xl font-semibold bg-card-border rounded-md w-[50px] h-[50px] flex justify-center items-center text-white">${seconds}</div>
+                <div class="text-xs">Seconds</div>
+            </div>
+        </div>
+    `;
+    if (timeDifference < 0) {
+        clearInterval(countdownInterval); // Sayaçı durdur
+        document.getElementById('countdown').innerHTML = "Geri Sayım Tamamlandı!";
+    }
+    
+    countDownSec.innerHTML = countTxt;
+}
+const countdownInterval = setInterval(countDown, 1000)
+countDown()
 
 
 
