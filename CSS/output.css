@@ -844,6 +844,26 @@ video {
   width: min-content;
 }
 
+.w-\[90\&px\] {
+  width: 90&px;
+}
+
+.w-\[90\%px\] {
+  width: 90%px;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
