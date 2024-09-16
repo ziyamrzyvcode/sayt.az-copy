@@ -664,6 +664,14 @@ video {
   margin: auto;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1183,6 +1191,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-card-border {
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 113 242 / var(--tw-bg-opacity));
+}
+
+.bg-\[card-border\] {
+  background-color: card-border;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1206,6 +1223,18 @@ video {
 
 .p-\[15px\] {
   padding: 15px;
+}
+
+.p-\[\] {
+  padding: ;
+}
+
+.p-\[10\] {
+  padding: 10;
+}
+
+.p-\[50px\] {
+  padding: 50px;
 }
 
 .px-3 {
@@ -1236,6 +1265,16 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .text-left {
@@ -1278,6 +1317,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1288,6 +1331,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-black {
@@ -1363,6 +1410,16 @@ video {
 .text-mobMenuTxt {
   --tw-text-opacity: 1;
   color: rgb(48 11 96 / var(--tw-text-opacity));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1476,6 +1533,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:text-\[20px\] {
     font-size: 20px;
   }
@@ -1483,11 +1544,23 @@ video {
   .sm\:text-\[26px\] {
     font-size: 26px;
   }
+
+  .sm\:text-\[30px\] {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 768px) {
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:text-\[30px\] {
@@ -1496,6 +1569,14 @@ video {
 
   .md\:text-\[36px\] {
     font-size: 36px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .md\:text-\[50px\] {
+    font-size: 50px;
   }
 }
 
