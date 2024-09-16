@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Wisher.az",
+      "description": "Wisher.az xüsusi günləri xatırlamaq və qeyd etmək üçün şəxsi köməkçinizdir.",
+      "image": "img/startups/Wisher.png"
+    },
+    {
+      "id": 2,
+      "name": "Sayt.az",
+      "description": "Sayt.az 2004-cü ildən fəaliyyətə başlamışdır. 2004-2016 -cı illər ərzində Azərbaycan bazarında bir çox ilklərə imza atmışdır.",
+      "image": "img/startups/Saytaz.jpg"
+    },
+    {
+      "id": 3,
+      "name": "football.biz",
+      "description": "Futbol nəticələrinin canlı təqdim edilməsi",
+      "image": "img/startups/Football.png"
+    },
+    {
+      "id": 4,
+      "name": "paracoin.network",
+      "description": "Para göndər & qəbul et, NFT Al & Sat, Ağıllı müqavilələr hazırla, Birja, Ödənişlər",
+      "image": "img/startups/Paracoin.png"
+    },
+    {
+      "id": 5,
+      "name": "kredit.az",
+      "description": "kredit.az saytı ümumi bankların kredit faizləri haqqında məlumatları bir araya toplayacaq",
+      "image": "img/startups/Kreditaz.png"
+    },
+    {
+      "id": 6,
+      "name": "telefon.az",
+      "description": "Telefonların online alışı və satışı",
+      "image": "img/startups/Telefonaz.png"
+    },
+    {
+      "id": 7,
+      "name": "123.az",
+      "description": "123.az Elekteron Ticarət saytıdır",
+      "image": "img/startups/123az.png"
+    },
+    {
+      "id": 8,
+      "name": "ug.news",
+      "description": "ug.news hər kəsin öz xəbər kanalını hazırlayacağı platformadır",
+      "image": "img/startups/Ugnews.png"
+    },
+    {
+      "id": 9,
+      "name": "menzil.az",
+      "description": "menzil.az evlərin alqı-satqısı, kirayəsi elanlarının paylaşılması üçün platformadır",
+      "image": "img/startups/Menzilaz.png"
+    },
+    {
+      "id": 10,
+      "name": "fly.az",
+      "description": "fly.az saytı vasitəsilə sərfəli tur paketlərini, biletləri əldə edəcəksiniz",
+      "image": "img/startups/Flyaz.png"
+    }
+  ]

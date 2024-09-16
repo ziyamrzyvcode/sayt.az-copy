@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+        <header class="p-4 dark:bg-gray-100 dark:text-gray-800">
+            <div class="container flex justify-between h-16 mx-auto items-center">
+                <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+                    <img src="Img/saytaz.svg" alt="Logo">
+                </a>
+                <div class="items-stretch hidden space-x-3 lg:flex" id="desktopMenu"></div>
+                
+                <div class="flex items-center">
+                    <div class="text-left menu-item">
+                        <div>
+                            <button type="button" onclick="handleMenuOpen('dropDownValyuta')" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                ₼
+                                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="dropDownValyuta" class="absolute hidden z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">₼</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">$</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <button type="button" onclick="handleMenuOpen('dropDownDil')" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                <img alt="az" loading="lazy" width="24" height="16" decoding="async" data-nimg="1" class="w-6 h-4 object-cover" src="https://sayt.az/images/az.png" style="color: transparent;">
+                                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="dropDownDil" class="absolute hidden z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1" role="none">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">₼</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">$</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="p-4 lg:hidden" id="mobMenuBtn" onclick="handleMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-800">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center flex-shrink-0 hidden lg:flex">
+                    <button class="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">Qiymet teklifi al</button>
+                    <button class="self-center px-8 py-3 rounded">Daxil olun</button>
+                </div>  
+                <div class="lg:hidden absolute flex-col hidden top-0 right-0 w-[500px] h-[100vh] p-[10px]" id="mobMenu"></div>
+            </div>
+        </header>
+        <section id="herosection" class="flex justify-between mx-10">
+            <div class="flex flex-col justify-center items-start text-txtclr sm:w-[50%]">
+                <h1 class="text-[20px] sm:text-[26px] md:text-[36px] font-bold ">Mükəmməl web saytınızı indi sifariş edin!</h1>
+                <p class="text-[14px] sm:text-[20px] md:text-[30px] font-medium">Müddətli təklif – Tələsin!</p>
+                <ul class="list-disc list-inside ml-5">
+                    <li>Rahat idarəetmə paneli</li>
+                    <li>Axtarış Motoru Optimallaşdırılması (SEO)</li>
+                    <li>Gözəl şablon dizayn</li>
+                    <li>Mobil uyğun dizayn</li>
+                    <li>7/24 Müştəri dəstəyi</li>
+                  </ul>                  
+                <div>
+                    <span class="line-through">₼1500</span>
+                    <span>₼1299</span>
+                </div>
+                <p>Bu fürsəti əldən verməyin! Web saytınızı indi sifariş edin!</p>
+                <div>
+                    <button>Sayt Kalkulyatoru</button>
+                    <button>Çata başla</button>
+                </div>
+                <a href="">Nümunə saytlara baxın</a>
+            </div>
+        </section>
+        <!-- <i class="fa-solid fa-x text-black"></i> -->
+    <!-- <section id="team">
+        <h2>Komandamızın Pərdə Arxası</h2>
+        <h4>Komandamızla Tanış Olaq</h4>
+        <div id="ourTeam" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
+            
+        </div>
+    </section>
+    <footer>
+        <div class="flex justify-between">
+            <div>
+                <img src="Img/saytaz.svg" alt="">
+                <p>Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər təklif edir.</p>
+                <div>
+                    <p>Bizi izleyin</p>
+                    <div class="flex"></div>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <h6>HOSTING & DOMAIN</h6>
+                    <ul>
+                        <li>Domen</li>
+                        <li>Veb Hostinq</li>
+                        <li>VPS Hostinq</li>
+                        <li>Server</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Sirket</h6>
+                    <ul>
+                        <li>Haqqimizda</li>
+                        <li>Elaqe</li>
+                        <li>Bloq</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <script>
+    function handleMenuOpen(id){
+        const menuItem = document.querySelector(`#${id}`);
+        menuItem.classList.toggle('hidden');
+    }
+    function handleMenu(){
+        const mobMenu = document.querySelector('#mobMenu');
+        mobMenu.classList.toggle('hidden');
+    }
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

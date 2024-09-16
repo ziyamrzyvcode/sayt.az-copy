@@ -1,0 +1,189 @@
+[
+    {
+      "name": "Veb sayt",
+      "id": 1,
+      "subMenu": [
+        {
+          "id": 1,
+          "header": "Hökumət və qeyri-kommersiya saytları",
+          "body": "Hökumət və qeyri-kommersiya saytları",
+          "image": "img/menu/item1_1.jpg"
+        },
+        {
+          "id": 2,
+          "header": "Kiçik biznes saytları",
+          "body": "Kiçik bizneslər üçün saytlar",
+          "image": "img/menu/item1_2.jpg"
+        },
+        {
+          "id": 3,
+          "header": "E-ticarət saytları",
+          "body": "E-ticarət saytları",
+          "image": "img/menu/item1_3.jpg"
+        },
+        {
+          "id": 4,
+          "header": "Hüquq firma saytı",
+          "body": "Hüquq firma saytı",
+          "image": "img/menu/item1_4.jpg"
+        },
+        {
+          "id": 5,
+          "header": "Bloqlar və Şəxsi Vebsayt",
+          "body": "Bloqlar və Şəxsi Vebsayt",
+          "image": "img/menu/item1_5.jpg"
+        },
+        {
+          "id": 6,
+          "header": "Daşınmaz əmlak veb saytı",
+          "body": "Daşınmaz əmlak veb saytı",
+          "image": "img/menu/item1_6.jpg"
+        },
+        {
+          "id": 7,
+          "header": "Tibb - Doktor Saytlar",
+          "body": "Tibb Doktor Saytlar",
+          "image": "img/menu/item1_7.jpg"
+        },
+        {
+          "id": 8,
+          "header": "WordPress Saytları",
+          "body": "WordPress Saytları",
+          "image": "img/menu/item1_8.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Domen",
+      "id": 2,
+      "subMenu": [
+        {
+          "id": 1,
+          "header": "Domen",
+          "body": "Etibarlı xidmət",
+          "image": "img/menu/item2_1.jpg"
+        },
+        {
+          "id": 2,
+          "header": "Pulsuz Domen Qeydiyyatı",
+          "body": "Sürətli qeydiyyat",
+          "image": "img/menu/item2_2.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Hostinq",
+      "id": 3,
+      "subMenu": [
+        {
+          "id": 1,
+          "header": "Veb Hostinq",
+          "body": "₼10.00/ay-dan başlayaraq",
+          "image": "img/menu/item3_1.jpg"
+        },
+        {
+          "id": 2,
+          "header": "VPS",
+          "body": "₼15.00/ay-dan başlayaraq",
+          "image": "img/menu/item3_2.jpg"
+        },
+        {
+          "id": 3,
+          "header": "Server",
+          "body": "₼99.00/ay-dan başlayaraq",
+          "image": "img/menu/item3_3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Xidmətlər",
+      "id": 4,
+      "subMenu": [
+        {
+          "id": 1,
+          "header": "Vebsayt sifarişinizi izləyin",
+          "body": "Sifarişinizi asanlıqla izləyin",
+          "image": "img/menu/item4_1.jpg"
+        },
+        {
+          "id": 2,
+          "header": "Sayt Kalkulyatoru",
+          "body": "Saytın Qiymətini Öyrən",
+          "image": "img/menu/item4_2.jpg"
+        },
+        {
+          "id": 3,
+          "header": "SEO Xidməti",
+          "body": "Axtarış Sistemi Optimizasiyası",
+          "image": "img/menu/item4_3.jpg"
+        },
+        {
+          "id": 4,
+          "header": "Mobil Tətbiqlərin Hazırlanması",
+          "body": "Mobil tətbiq xidməti",
+          "image": "img/menu/item4_4.jpg"
+        },
+        {
+          "id": 5,
+          "header": "Texniki Xidmət",
+          "body": "Texniki Xidmət",
+          "image": "img/menu/item4_5.jpg"
+        },
+        {
+          "id": 6,
+          "header": "Sosial Media Marketinq",
+          "body": "Sosial Media Marketinq",
+          "image": "img/menu/item4_6.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Şirkət",
+      "id": 5,
+      "subMenu": [
+        {
+          "id": 1,
+          "header": "Haqqımızda",
+          "body": "Bizim komanda üzvlərimiz",
+          "image": "img/menu/item5_1.jpg"
+        },
+        {
+          "id": 2,
+          "header": "Bloq",
+          "body": "Ən son xəbərlər və faydalı məlumatlar",
+          "image": "img/menu/item5_2.jpg"
+        },
+        {
+          "id": 3,
+          "header": "Bütün StartUplar",
+          "body": "Startupları idarə edən komandamıza qoşulun",
+          "image": "img/menu/item5_3.jpg"
+        },
+        {
+          "id": 4,
+          "header": "Portfolio",
+          "body": "Hazırladığımız hər bir iş bizim üçün dəyərlidir",
+          "image": "img/menu/item5_4.jpg"
+        },
+        {
+          "id": 5,
+          "header": "Karyera",
+          "body": "Hazırkı vakansiyalarımız",
+          "image": "img/menu/item5_5.jpg"
+        },
+        {
+          "id": 6,
+          "header": "Freelance",
+          "body": "Sizdə qeydiyyatdan keçməklə freelance işlərə bilərsiz",
+          "image": "img/menu/item5_6.jpg"
+        },
+        {
+          "id": 7,
+          "header": "Əlaqə Forması",
+          "body": "Əlaqə Saxlayın",
+          "image": "img/menu/item5_7.jpg"
+        }
+      ]
+    }
+  ]
+  
