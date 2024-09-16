@@ -1,0 +1,45 @@
+.progress-circle-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .progress-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .progress-circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .progress-circle circle {
+    fill: none;
+    stroke-width: 10;
+  }
+  
+  .progress-circle circle:first-child {
+    stroke: #e6e6e6;
+  }
+  
+ .progress-continue { stroke:#f45b69;}
+ .progress-success { stroke:#22BFA5;}
+  .progress-circle .progress {
+    stroke-dasharray: 282.6;
+    stroke-dashoffset: calc(282.6 - (282.6 * var(--percentage)) / 100);
+    transition: stroke-dashoffset 0.5s ease-in-out;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
