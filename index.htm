@@ -228,6 +228,83 @@
                     </div>
                 </div>
         </div>
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <!-- Title -->
+            <h2 class="text-3xl font-bold text-center text-purple-800 mb-4">Hostinq Planınızı Seçin</h2>
+            <p class="text-center text-gray-600 mb-8">Yaxşı Bir Başlanğıc Təhlükəsiz və Güclü Hosting Taleb Edir</p>
+    
+            <!-- Toggle Switch for Monthly/Yearly -->
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex items-center bg-purple-100 p-2 rounded-full">
+                    <span class="mr-2 text-gray-600">İllik</span>
+                    <input type="checkbox" id="pricingToggle" class="hidden" onchange="togglePricing()">
+                    <label for="pricingToggle" class="cursor-pointer relative w-12 h-6 bg-purple-200 rounded-full">
+                        <span class="dot absolute left-1 top-1 bg-purple-600 w-4 h-4 rounded-full transition"></span>
+                    </label>
+                    <span class="ml-2 text-purple-800 font-semibold">Aylıq</span>
+                </div>
+            </div>
+    
+            <!-- Pricing Plans -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Economic Plan -->
+                <div class="bg-white shadow-lg rounded-lg w-80 p-6 text-center">
+                    <h3 class="text-xl font-bold mb-4 text-purple-800">Ekonomik</h3>
+                    <p class="text-4xl font-bold mb-4 text-purple-900">
+                        <span id="priceEconomik">5</span> ₼ /<span id="planEconomik">ay</span>
+                    </p>
+                    <ul class="text-gray-600 mb-6">
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>1 Domen</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>3 GB Disk Həcmi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>3 E-mail Hesabı</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Premium müştəri dəstəyi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>SSL Təhlükəsizliyi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Limitsiz Trafik</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>cPanel</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>FTP Girişi</li>
+                    </ul>
+                    <button class="bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700">Sifariş et</button>
+                </div>
+    
+                <!-- Standard Plan -->
+                <div class="bg-white shadow-lg rounded-lg w-80 p-6 text-center border-4 border-purple-600">
+                    <h3 class="text-xl font-bold mb-4 text-purple-800">Standart <span class="text-xs text-purple-600 ml-2">ƏN POPULYAR</span></h3>
+                    <p class="text-4xl font-bold mb-4 text-purple-900">
+                        <span id="priceStandart">10</span> ₼ /<span id="planStandart">ay</span>
+                    </p>
+                    <ul class="text-gray-600 mb-6">
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>2 Domen</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>8 GB Disk Həcmi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>5 E-mail Hesabı</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Premium müştəri dəstəyi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>SSL Təhlükəsizliyi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Limitsiz Trafik</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>cPanel</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>FTP Girişi</li>
+                    </ul>
+                    <button class="bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700">Sifariş et</button>
+                </div>
+    
+                <!-- Professional Plan -->
+                <div class="bg-white shadow-lg rounded-lg w-80 p-6 text-center">
+                    <h3 class="text-xl font-bold mb-4 text-purple-800">Professional</h3>
+                    <p class="text-4xl font-bold mb-4 text-purple-900">
+                        <span id="priceProfessional">20</span> ₼ /<span id="planProfessional">ay</span>
+                    </p>
+                    <ul class="text-gray-600 mb-6">
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>5 Domen</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>14 GB Disk Həcmi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Limitsiz E-mail Hesabı</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Premium müştəri dəstəyi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>SSL Təhlükəsizliyi</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>Limitsiz Trafik</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>cPanel</li>
+                        <li class="flex my-[5px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen"><path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path></svg>FTP Girişi</li>
+                    </ul>
+                    <button class="bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700">Sifariş et</button>
+                </div>
+            </div>
+        </div>
         <section id="startUps" class="flex flex-row flex-wrap px-[50px] justify-evenly"></section>
         <section id="team" class="my-[20px]">
             <div class="flex flex-col justify-center items-center my-[40px]">
@@ -355,6 +432,25 @@
         </div>
     </footer> -->
     <script>
+        function togglePricing() {
+    var isYearly = document.getElementById("pricingToggle").checked;
+
+    // Prices for monthly or yearly
+    var ekonomicPrice = isYearly ? 50 : 5;
+    var standardPrice = isYearly ? 100 : 10;
+    var professionalPrice = isYearly ? 200 : 20;
+
+    // Update the prices in the HTML
+    document.getElementById("priceEconomik").textContent = ekonomicPrice;
+    document.getElementById("priceStandart").textContent = standardPrice;
+    document.getElementById("priceProfessional").textContent = professionalPrice;
+
+    // Update the period labels
+    document.getElementById("planEconomik").textContent = isYearly ? "il" : "ay";
+    document.getElementById("planStandart").textContent = isYearly ? "il" : "ay";
+    document.getElementById("planProfessional").textContent = isYearly ? "il" : "ay";
+}
+
     function handleMenuOpen(id){
         const menuItem = document.querySelector(`#${id}`);
         const allMenus = document.querySelectorAll('.drpItem');
