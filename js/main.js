@@ -3,6 +3,26 @@ fetch('./data/menu.json')
   .then(data => {
     displayMenuItems(data);
 });
+fetch('./data/startup.json')
+    .then(response => response.json())
+    .then(data => {
+        displayStartUps(data);
+    });
+fetch('./data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        displayTeamMembers(data.teamMembers);
+    });
+fetch('./data/projects.json')
+    .then(response => response.json())
+    .then(data => {
+        displayProjects(data.projects);
+    });
+fetch('./data/comments.json')
+        .then(response => response.json())
+        .then(data => {
+            displayComments(data.comments);
+        });
 let dropDowns = `<div class="flex items-center">
                     <div class="text-left menu-item">
                         <div>
@@ -126,6 +146,83 @@ function countDown(){
 }
 const countdownInterval = setInterval(countDown, 1000)
 countDown()
+function displayStartUps(startUps) {
+    const startUp = document.querySelector('#startUps');
+    let startUpTxt = '';
+    
+    // StartUps dizisini karıştır ve ilk 3'ünü al
+    const randomStartUps = startUps
+        .sort(() => Math.random() - 0.5) // Rastgele karıştır
+        .slice(0, 3); // İlk 3 öğeyi al
+
+    randomStartUps.forEach(startUp => {
+        startUpTxt += `
+            <div class="w-[30%]">
+                <img src="${startUp.image}" alt="${startUp.name}" class="object-cover rounded-lg h-[200px]">
+                <div class="mt-3">
+                    <h3 class="text-lg font-semibold">${startUp.name}</h3>
+                    <p class="text-sm text-gray-500">${startUp.description}</p>
+                </div>
+            </div>`;
+    });
+    
+    startUp.innerHTML = startUpTxt;
+}
+function displayTeamMembers(members) {
+    const ourTeam = document.querySelector('#ourTeam');
+    let teamText = '';
+    members.forEach(member => {
+      teamText += `<div class="p-[15px] m-[10px] relative border-2 border-card-border rounded-[20px] max-w-fit">
+                    <div><img src="${member.image}" class="rounded-[14px] object-cover w-[196px] h-[230px]" /> </div>
+                    <div class="text-center w-[196px] rounded-[14px] m-auto absolute bottom-[10px] bg-white">
+                      <h3 class="text-xl font-bold text-card-header">${member.name}</h3>
+                      <p class="text-sm font-bold text-card-footer">${member.position}</p>
+                    </div>
+                    </div>`
+    });
+    ourTeam.innerHTML = teamText;
+}
+function displayProjects(projects) {
+    const project = document.querySelector('#projects');
+    let projectText = '';
+    projects.forEach(project => {
+        projectText += `<div class="w-[45%]">
+                          <img src="${project.image}" alt="${project.name}" class="object-cover rounded-lg">
+                          <div class="mt-3">
+                              <h3 class="text-lg font-semibold">${project.name}</h3>
+                          </div>
+                      </div>`;
+    });
+    project.innerHTML = projectText;
+}
+
+function displayComments(comments) {
+    const comment = document.querySelector('#slideItems');
+    let commentText = '';
+    comments.forEach(comment => {
+        commentText += ` <div class="swiper-slide !flex flex-col !justify-center !items-center px-[50px] text-center">
+                            <h5>${comment.name}</h5>
+                            <p>${comment.position}</p>
+                            <p>${comment.comment}</p>
+                        </div>    
+                        `;
+    });
+    comment.innerHTML = commentText + `...`;
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+
+
+
 
 
 

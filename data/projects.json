@@ -1,0 +1,12 @@
+{
+    "projects": [
+      { "id": 1, "name": "azfenttq", "image": "img/projects/Azfenttq.png" },
+      { "id": 2, "name": "notehub.az", "image": "img/projects/Notehub.png" },
+      { "id": 3, "name": "azeholidays.com", "image": "img/projects/Azeholidays.png" },
+      { "id": 4, "name": "vipconsulting.az", "image": "img/projects/Vipconsulting.png" },
+      { "id": 5, "name": "zemed.az", "image": "img/projects/Zamed.png" },
+      { "id": 6, "name": "esco.az", "image": "img/projects/Esco.png" }
+      
+    ]
+  }
+  

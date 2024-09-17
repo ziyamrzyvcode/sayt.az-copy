@@ -1,0 +1,14 @@
+{
+    "teamMembers": [
+      { "id": 1, "name": "Rashad M.", "position": "Founder", "image": "img/team/Rashad.jpg" },
+      { "id": 2, "name": "Ramil Mirzayev", "position": "CEO", "image": "img/team/Ramil.jpg" },
+      { "id": 3, "name": "Rasim Adurahman", "position": "Project Manager", "image": "img/team/Rasim.jpg" },
+      { "id": 4, "name": "Ahmad Rustamov", "position": "Team Lead", "image": "img/team/Ahmad.jpg" },
+      { "id": 5, "name": "Fuad Mammadov", "position": "Front-End Developer", "image": "img/team/Fuad.png" },
+      { "id": 6, "name": "Mirafgan Eminbayli", "position": "Front-End Developer", "image": "img/team/Mirafgan.jpg" },
+      { "id": 7, "name": "Idrak Mustafazada", "position": "Customer Support", "image": "img/team/Idrak.jpg" },
+      { "id": 8, "name": "Saida Chinani", "position": "SMM", "image": "img/team/Saida.jpg" },
+      { "id": 9, "name": "Matanat M.", "position": "Front-End Developer", "image": "img/team/Matanat.jpg" }
+    ]
+  }
+  

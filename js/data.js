@@ -141,3 +141,18 @@ export const calcData = [
     }
 ];
 
+
+// { "id": 7, "name": "caspilimo.com", "image": "img/projects/Caspilimo.png" },
+      // { "id": 8, "name": "baymak.az", "image": "img/projects/Baymak.png" },
+      // { "id": 9, "name": "seljannovruzlu.com", "image": "img/projects/Seljan.png" },
+      // { "id": 10, "name": "qarmon.az", "image": "img/projects/Qarmon.png" },
+      // { "id": 11, "name": "naftalansanatoriya.com", "image": "img/projects/Naftalan.png" },
+      // { "id": 12, "name": "docfarhad.az", "image": "img/projects/Docfarhad.png" },
+      // { "id": 13, "name": "hedefinsaat.com", "image": "img/projects/Hedefinsaat.png" },
+      // { "id": 14, "name": "bahmanahmadli.com", "image": "img/projects/Bahman.jpg" },
+      // { "id": 15, "name": "tovuzaqrokompleks.com", "image": "img/projects/Tovuz.jpg" },
+      // { "id": 16, "name": "metbuat.az", "image": "img/projects/Metbuat.jpg" },
+      // { "id": 17, "name": "agrokimya.az", "image": "img/projects/Agrokimya.jpg" },
+      // { "id": 18, "name": "azerbaijanjournalists.az", "image": "img/projects/Journalists.jpg" },
+      // { "id": 19, "name": "planning.az", "image": "img/projects/Planning.jpg" },
+      // { "id": 20, "name": "art-trio.az", "image": "img/projects/Arttrio.jpg" }

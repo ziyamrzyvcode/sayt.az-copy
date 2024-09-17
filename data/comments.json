@@ -1,0 +1,26 @@
+{
+    "comments": [
+      {
+        "id": 1,
+        "name": "Bahman Ahmadlı",
+        "comment": "Sayt.az komandası tərəfindən hazırlanan ev alqı-satqısı saytı, gözləntilərimi tamamilə doğrultdu. Sayt.az-a dəyərli xidmətləri üçün təşəkkür edirəm.",
+        "position": "CEO",
+        "image": "img/comments/Bahman.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Seljan Novruz",
+        "comment": "Sayt.az saytımın hazırlanmasında gözləntilərimi aşdı. Mənim istəklərimi mükəmməl şəkildə əks etdirdi.",
+        "position": "CEO",
+        "image": "img/comments/Seljan.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Hikmat Taghiyev",
+        "comment": "Veb saytımı hazırlamaq üçün Sayt.az-ı seçmək biznesim üçün verdiyim ən yaxşı qərar idi.",
+        "position": "CEO",
+        "image": "img/comments/Hikmat.jpg"
+      }
+    ]
+  }
+  
