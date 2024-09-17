@@ -83,7 +83,7 @@
                 </div>
                 <p class="font-normal">Bu fürsəti əldən verməyin! Web saytınızı indi sifariş edin!</p>
                 <div class="flex flex-col sm:flex-row w-full">
-                    <button class="py-[10px] px-[30px] m-2 bg-card-border text-white text-[14px] sm:text-[16px] md:text-[25px] font-normal rounded-sm">Sayt Kalkulyatoru</button>
+                    <button class="py-[10px] px-[30px] m-2 bg-card-border text-white text-[14px] sm:text-[16px] md:text-[25px] font-normal rounded-sm"><a href="calc.htm">Sayt Kalkulyatoru</a></button>
                     <button class="py-[10px] px-[30px] m-2 bg-black text-white text-[14px] sm:text-[16px] md:text-[25px] font-normal rounded-sm">Çata başla</button>
                 </div>
                 <a href="">Nümunə saytlara baxın</a>
@@ -194,7 +194,7 @@
                                 </form>
                             </div>
                             <p class="text-base text-mainDarkPurple mt-2 leading-6" style="visibility: hidden;">*</p>
-                            <div class="sm:grid sm:grid-cols-3 md:flex md:flex-row justify-between mt-8 md:gap-5">
+                            <div class="sm:grid sm:grid-cols-3  flex md:flex-row  justify-between mt-8 md:gap-5">
                                 <div class="sm:border-r-[1px] sm:border-b-[1px] sm:border-[#FFFFFF40] sm:p-4 cursor-pointer  md:border-none  md:px-6 text-center">
                                     <div class="text-mainLightPurple font-semibold text-2xl">.az</div><div class="text-mainLightPurple font-semibold">₼40/il</div>
                                 </div>
@@ -238,25 +238,91 @@
                 
             </div>
         </section>
-        <section id="projects" class=" flex justify-center flex-wrap gap-10 px-[50px]"></section>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" id="slideItems">
-              <!-- Slides -->
-             
+        <section  class=" px-[50px]">
+            <div class="flex !flex-col justify-center items-center my-[40px]"></div>
+                <div class="sm:text-[22px] text-lg text-card-header md:text-[32px] text-center font-bold leaeding-[38px]">Son İşlərimiz</div>
+                <div class="text-base text-card-footer text-sans md:text-xl text-center font-semibold">Paylaşmaqdan Qürur Duyuruq</div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+            <div id="projects" class=" flex justify-center flex-wrap gap-10"></div>
+        </section>
+        <section> 
+            <div class="flex !flex-col justify-center items-center my-[40px]"></div>
+                <div class="sm:text-[22px] text-lg text-card-header md:text-[32px] text-center font-bold leaeding-[38px]">Müştərilərimizin Rəyləri</div>
+                <div class="text-base text-card-footer text-sans md:text-xl text-center font-semibold">Müştərilərin fikirləri</div>
+            </div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" id="slideItems">
+                  <!-- Slides -->
+                 
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+        </section>
+        <footer class="bg-purple-100 mt-[20px] py-10 font-bold text-lg">
+            <div class="m-auto w-[80%]">
+                <div class="flex flex-wrap justify-between">
+                    <!-- Left section (Logo and description) -->
+                    <div class="mb-6 w-full sm:w-[50%]">
+                        <div class="text-4xl font-bold mb-3 text-purple-900">
+                           <img src="Img/saytaz.svg" alt="">
+                        </div>
+                        <p class="text-sm text-purple-700">
+                            Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO, SMM və texniki xidmətlər təklif edir.
+                        </p>
+                        <div class="mt-4">
+                            <p class="text-sm font-semibold mb-2">Bizi izləyin:</p>
+                            <div class="flex space-x-4">
+                                <!-- Social Media Icons -->
+                                <a href="#" class="text-purple-500 hover:text-purple-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.337 3.608 1.312.975.975 1.251 2.241 1.312 3.608.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.07 4.849-.062 1.366-.337 2.633-1.312 3.608-.975.975-2.241 1.251-3.608 1.312-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.337-3.608-1.312-.975-.975-1.251-2.241-1.312-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.337-2.633 1.312-3.608.975-.975 2.241-1.251 3.608-1.312C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.725.131 4.432.414 3.356 1.49 2.281 2.566 1.999 3.859 1.94 5.186.881 6.466.868 6.876.868 10.132c0 3.256.013 3.666.072 4.946.059 1.327.341 2.62 1.417 3.696 1.075 1.075 2.368 1.358 3.695 1.417 1.28.058 1.69.072 4.946.072s3.666-.014 4.946-.072c1.327-.059 2.62-.341 3.695-1.417 1.076-1.076 1.358-2.369 1.417-3.696.059-1.28.072-1.69.072-4.946s-.013-3.666-.072-4.946c-.059-1.327-.341-2.62-1.417-3.695-1.075-1.075-2.368-1.358-3.695-1.417C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.161a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.711a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-purple-500 hover:text-purple-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9.004 3.978c-1.983.03-3.99.015-5.98.001.002 5.31-.006 10.621.003 15.932 5.28.007 10.558.004 15.837.002.008-5.3-.002-10.6.003-15.899h-5.836c-.002-.333-.005-.667-.007-1-.333 0-.667 0-1 0-.003.333-.005.667-.007 1zm2.995-.005c1.333-.005 2.667-.004 4-.001.001 2.666 0 5.332 0 8 0 .334 0 .667 0 1-.333 0-.667.003-1.001-.002-.001-.332.002-.668-.002-1.001-.332-.002-.668.003-1-.001-.005-.333.004-.668-.003-1-.333 0-.667.003-1.001-.002-.003-.332.003-.668-.002-1-.333 0-.667.003-1-.001-.004-.333.003-.668-.003-1zm1.999 1.002h1v1h-1v-1zm-.001 2.998h1v1.001h-1v-1.001zm-2.997-.002c-.002-.667-.004-1.334-.007-2-.332 0-.667 0-1 0-.002.667-.004 1.334-.007 2zm-1-.998h1v1.001h-1v-1.001z"/>
+                                    </svg>
+                                </a>
+                                <!-- Add more social media links as needed -->
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Middle section (Hosting & Domain) -->
+                    <div class="mb-6 w-full sm:w-[50%] flex flex-row">
+                        <div class="w-full sm:w-1/3 mb-6">
+                            <h3 class="font-bold text-lg mb-3 text-purple-900">HOSTİNQ & DOMEN</h3>
+                            <ul class="text-sm space-y-2 text-purple-700">
+                                <li><a href="#" class="hover:text-purple-900">Domen</a></li>
+                                <li><a href="#" class="hover:text-purple-900">Veb Hosting</a></li>
+                                <li><a href="#" class="hover:text-purple-900">VPS Hostinq</a></li>
+                                <li><a href="#" class="hover:text-purple-900">Server</a></li>
+                            </ul>
+                        </div>
         
-    <footer>
+                        <!-- Right section (Company Information) -->
+                        <div class="w-full sm:w-1/3">
+                            <h3 class="font-bold text-lg mb-3 text-purple-900">ŞİRKƏT</h3>
+                            <ul class="text-sm space-y-2 text-purple-700">
+                                <li><a href="#" class="hover:text-purple-900">Haqqımızda</a></li>
+                                <li><a href="#" class="hover:text-purple-900">Əlaqə</a></li>
+                                <li><a href="#" class="hover:text-purple-900">Bloq</a></li>
+                                <li><a href="#" class="hover:text-purple-900">Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+    <!-- <footer>
         <div class="flex justify-between">
             <div>
                 <img src="Img/saytaz.svg" alt="">
@@ -287,7 +353,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script>
     function handleMenuOpen(id){
         const menuItem = document.querySelector(`#${id}`);

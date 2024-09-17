@@ -157,7 +157,7 @@ function displayStartUps(startUps) {
 
     randomStartUps.forEach(startUp => {
         startUpTxt += `
-            <div class="w-[30%]">
+            <div class="md:w-[30%]">
                 <img src="${startUp.image}" alt="${startUp.name}" class="object-cover rounded-lg h-[200px]">
                 <div class="mt-3">
                     <h3 class="text-lg font-semibold">${startUp.name}</h3>
